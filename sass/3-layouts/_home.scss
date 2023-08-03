@@ -1,0 +1,45 @@
+@use "../0-abstracts/media" as m;
+
+body {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        .header-menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            .menu-links{
+                display: flex;
+                flex-direction: row;
+            }
+            .header-social{
+                display: flex;
+                flex-direction: row;
+            }
+        }
+        main {
+            margin: auto;
+        }
+    }
+}
+
+@include m.for-desktop-up (1000px) {    
+    body {
+
+        .wrapper {
+        display: flex;
+        flex-direction: column;
+
+            header {
+
+            }
+            main {
+
+            }
+        }
+    }
+}
+
+@include m.stop-top-overflow (900px,550px) {
+
+}

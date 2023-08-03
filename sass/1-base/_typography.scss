@@ -1,0 +1,15 @@
+@use  '../0-abstracts/colors' as c;
+$fontDisplay: 'Poppins', sans-serif;
+
+body {
+    font-family: $fontDisplay;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1rem;
+
+    header {
+
+    }
+
+}
+

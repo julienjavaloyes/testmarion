@@ -1,0 +1,22 @@
+
+@use  '../0-abstracts/colors' as c;
+
+body {
+    background-color:c.$Bg-Gray;
+    .wrapper {
+
+        header {
+            background-color: white;
+            .header-line {
+                padding: 1rem;
+                background-color: c.$Pink;
+            }
+
+        }
+        main {
+
+
+        }
+    }
+
+}
