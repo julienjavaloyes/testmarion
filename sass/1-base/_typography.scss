@@ -3,12 +3,22 @@ $fontDisplay: 'Poppins', sans-serif;
 
 body {
     font-family: $fontDisplay;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1rem;
-    line-height: 1rem;
 
-    header {
+    h1 {
+        font-weight: 700;
+        font-size: 3rem;
+    }
+    .hero-text {
+        font-size: 1.75rem;
+    }
 
+    .browse{
+        color: white;
+    }
+    .buttonmore{
+        color:#1f2f54;
     }
 
 }

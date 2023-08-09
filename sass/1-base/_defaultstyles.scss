@@ -2,21 +2,46 @@
 @use  '../0-abstracts/colors' as c;
 
 body {
-    background-color:c.$Bg-Gray;
+    background-color:white;
     .wrapper {
 
         header {
-            background-color: white;
-            .header-line {
-                padding: 1rem;
-                background-color: c.$Pink;
+            margin: 2rem;
+            margin-top: 28px;
+            .header-menu {
+                padding: 32px 36px;
+                .logo {
+                    padding-right: 40px;
+                }
             }
-
         }
         main {
+            .photo-container {
+                display: grid;
+                grid-template-columns: repeat(8,1fr) ;
+                grid-template-rows: repeat(4,1fr);
+                .img-bg-color {
+                    background-color: blue;
+                    border-radius: 5%;
+                    grid-column: 2/-1;
+                    grid-row: 1/5;
+                }
+                .image {
+                    border-radius: 5%;
+                    grid-column: 1/-2;
+                    grid-row: 2/4;
+                    align-self: center;
+                    width: 100%;
+                }
+            }
+            .content-container {
 
-
+            }
+        }
+        footer {
+            margin: 2rem;
+            text-align: center;
         }
     }
-
 }
+
