@@ -4,18 +4,75 @@
 body {
     background-color:white;
     .wrapper {
-
+        .language-selection {
+            margin: 0 2rem;
+            width: 100%;
+            padding-left: 1rem;
+            display: flex;
+            gap: 15px;
+            flex-direction: row;
+            justify-content:flex-end;
+            img{
+                height: 30px;
+            }
+        }
         header {
-            margin: 2rem;
-            margin-top: 28px;
+            margin: 0 2rem;
             .header-menu {
-                padding: 32px 36px;
                 .logo {
-                    padding-right: 40px;
+                    margin: auto;
+                    img {
+                        width: 12rem;
+                    }
                 }
+                .hamburger-menu{
+                    margin-top: 24px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+                    width: max-content;
+                    cursor: pointer;
+                }
+                .hamburger-menu::before,
+                .hamburger-menu::after,
+                .hamburger-menu input{
+                    content:"";
+                    width: 60px;
+                    height: 8px;
+                    background-color: c.$text-menu;
+                    border-radius:9999px;
+                }
+                .hamburger-menu input{
+                    appearance: none;
+                    padding: 0;
+                    margin: 0;
+                    outline:none;
+                    pointer-events:none;
+                }
+
+                nav{
+                    width: 100%;
+                }
+                nav ul{
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    text-align: center;
+                    padding: 0;
+                }
+                nav li {
+                    padding: 1rem;
+                }
+                nav a {
+                    text-decoration: none;
+                    color:c.$text-menu;
+                }
+
             }
         }
         main {
+
             .photo-container {
                 display: grid;
                 grid-template-columns: repeat(8,1fr) ;
@@ -34,9 +91,27 @@ body {
                     width: 100%;
                 }
             }
-            .content-container {
-
+            .content{
+                padding-bottom: 5rem;
             }
+
+            summary {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            .arrow {
+                border: solid black;
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 3px;
+              }
+              .right {
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+              }
+
+
         }
         footer {
             margin: 2rem;

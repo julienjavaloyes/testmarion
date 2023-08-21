@@ -24,15 +24,71 @@ a:active {
 body {
   background-color: white;
 }
-body .wrapper header {
-  margin: 2rem;
-  margin-top: 28px;
+body .wrapper .language-selection {
+  margin: 0 2rem;
+  width: 100%;
+  padding-left: 1rem;
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+  justify-content: flex-end;
 }
-body .wrapper header .header-menu {
-  padding: 32px 36px;
+body .wrapper .language-selection img {
+  height: 30px;
+}
+body .wrapper header {
+  margin: 0 2rem;
 }
 body .wrapper header .header-menu .logo {
-  padding-right: 40px;
+  margin: auto;
+}
+body .wrapper header .header-menu .logo img {
+  width: 12rem;
+}
+body .wrapper header .header-menu .hamburger-menu {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: -moz-max-content;
+  width: max-content;
+  cursor: pointer;
+}
+body .wrapper header .header-menu .hamburger-menu::before,
+body .wrapper header .header-menu .hamburger-menu::after,
+body .wrapper header .header-menu .hamburger-menu input {
+  content: "";
+  width: 60px;
+  height: 8px;
+  background-color: #1a759f;
+  border-radius: 9999px;
+}
+body .wrapper header .header-menu .hamburger-menu input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  pointer-events: none;
+}
+body .wrapper header .header-menu nav {
+  width: 100%;
+}
+body .wrapper header .header-menu nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding: 0;
+}
+body .wrapper header .header-menu nav li {
+  padding: 1rem;
+}
+body .wrapper header .header-menu nav a {
+  text-decoration: none;
+  color: #1a759f;
 }
 body .wrapper main .photo-container {
   display: grid;
@@ -51,6 +107,24 @@ body .wrapper main .photo-container .image {
   grid-row: 2/4;
   align-self: center;
   width: 100%;
+}
+body .wrapper main .content {
+  padding-bottom: 5rem;
+}
+body .wrapper main summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body .wrapper main .arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+body .wrapper main .right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 body .wrapper footer {
   margin: 2rem;
@@ -75,7 +149,33 @@ body .browse {
 body .buttonmore {
   color: #1f2f54;
 }
+body .summary {
+  font-weight: 700;
+  font-size: 1rem;
+}
+body .detail-title {
+  font-style: italic;
+}
+body .price {
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: italic;
+}
 
+body .wrapper header .header-menu nav a::after {
+  display: flex;
+  content: "";
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  transition: 0.2s ease-in-out;
+  background-color: #1a759f;
+}
+body .wrapper header .header-menu nav a:hover:after {
+  width: 100%;
+}
 body button {
   background-color: transparent;
   border: none;
@@ -99,15 +199,30 @@ body .buttonmore:hover {
   border-color: #1f2f54;
 }
 
+body {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
 body .wrapper {
   display: flex;
   flex-direction: column;
 }
-body .wrapper .header-menu {
+body .wrapper header {
+  margin-top: 0;
+}
+body .wrapper header .header-menu {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+}
+body .wrapper header .header-menu nav {
+  display: none;
+}
+body .wrapper header .header-menu .hamburger-menu:has(input:checked) + nav {
+  display: contents;
 }
 body .wrapper main .content {
   display: flex;
@@ -115,7 +230,11 @@ body .wrapper main .content {
 }
 body .wrapper main .content2 {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+}
+body .wrapper main .photo-container {
+  margin: 2rem auto 0 auto;
+  max-width: 80%;
 }
 
 @media (min-width: 1000px) {
@@ -130,10 +249,34 @@ body .wrapper main .content2 {
     display: flex;
     flex-direction: column;
   }
-  body .wrapper .header-menu {
+  body .wrapper header {
+    padding: 32px 36px;
+  }
+  body .wrapper header .logo {
+    margin: 0;
+    padding: 0 40px 0 0;
+  }
+  body .wrapper header .header-menu {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+  }
+  body .wrapper header .header-menu .hamburger-menu {
+    display: none;
+    width: 0;
+  }
+  body .wrapper header .header-menu nav {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  body .wrapper header .header-menu .hamburger-menu:has(input:checked) + nav {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  body .wrapper header .header-menu nav ul {
+    flex-direction: row;
   }
   body .wrapper main {
     max-width: 1100px;
