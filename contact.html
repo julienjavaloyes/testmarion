@@ -63,11 +63,93 @@
         </div>
       </header>
       <main>
-        <div class="content2">
+        <div class="content2 nopics">
           <div class="content-container">
-            <h2>...</h2>
+            <h2>Formulaire de contact</h2>
 
-            <p>...</p>
+            <form action="">
+              <fieldset>
+                <legend>Nom</legend>
+                <input type="text" name="Nom" placeholder="Nom" />
+              </fieldset>
+              <fieldset>
+                <legend>Prénom</legend>
+                <input type="text" name="Prénom" placeholder="Prénom" />
+              </fieldset>
+              <fieldset>
+                <legend>Email</legend>
+                <input type="email" name="email" placeholder="Email" />
+              </fieldset>
+
+              <fieldset>
+                <legend>Nationalité</legend>
+                <input
+                  type="text"
+                  name="Nationalite"
+                  placeholder="Nationalité"
+                />
+              </fieldset>
+
+              <fieldset>
+                <legend>Lieu de résidence</legend>
+                <input
+                  type="text"
+                  name="lieu_residence"
+                  placeholder="Lieu de résidence"
+                />
+              </fieldset>
+
+              <fieldset>
+                <legend>Je suis intéressé par:</legend>
+                <div>
+                  <input type="checkbox" name="test" class="checkb" />
+                  <label for="test">cours de conversation</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="test" class="checkb" />
+                  <label for="test">cours généraux</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="test" class="checkb" />
+                  <label for="test">cours de prononciation</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="test" class="checkb" />
+                  <label for="test"
+                    >programme en autonomie booste ton français</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" name="test" class="checkb" />
+                  <label for="test">étudier en france</label>
+                </div>
+
+                <input type="checkbox" name="test" class="checkb" />
+                <label for="test">autre demande</label>
+              </fieldset>
+
+              <fieldset>
+                <legend>Niveau de français</legend>
+                <select name="test" id="">
+                  <option value="">débutant</option>
+                  <option value="">A1</option>
+                  <option value="">A2</option>
+                  <option value="">intermédiaire</option>
+                  <option value="">B1</option>
+                  <option value="">B2</option>
+                  <option value="">C1</option>
+                  <option value="">C2</option>
+                  <option value="">je ne sais pas</option>
+                </select>
+              </fieldset>
+
+              <fieldset>
+                <legend>Commentaire</legend>
+                <input type="text" name="precision" placeholder="" />
+              </fieldset>
+
+              <button type="submit" class="form_button">Envoyer</button>
+            </form>
 
             <div class="content-button"></div>
           </div>

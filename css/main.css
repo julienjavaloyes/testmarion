@@ -126,6 +126,13 @@ body .wrapper main .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
+body .wrapper main form {
+  display: flex;
+  flex-direction: column;
+}
+body .wrapper main form input {
+  margin: 0.5rem;
+}
 body .wrapper footer {
   margin: 2rem;
   text-align: center;
@@ -197,6 +204,24 @@ body .buttonmore:hover {
   color: white;
   background-color: #030774;
   border-color: #1f2f54;
+}
+body .form_button {
+  background-color: gray;
+}
+body fieldset {
+  padding: 0;
+}
+body input {
+  border: none;
+  width: 90%;
+}
+body .checkb {
+  width: auto;
+}
+body select {
+  width: 90%;
+  border: none;
+  padding-left: 0.5rem;
 }
 
 body {
@@ -297,6 +322,13 @@ body .wrapper main .photo-container {
     gap: 15px;
   }
   body .wrapper main .content2 .content-container {
+    align-self: center;
+  }
+  body .wrapper main .nopics {
+    display: inline;
+    margin: auto;
+  }
+  body .wrapper main .nopics .content-container {
     align-self: center;
   }
 }/*# sourceMappingURL=main.css.map */
