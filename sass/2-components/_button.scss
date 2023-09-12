@@ -31,16 +31,23 @@ body {
         margin: 1rem;
 
     }
+    .content-button{
+        margin: 2rem;
+    }
     .browse{
         background-color: #f25e5e;
         padding: 1.3rem 2rem;
+        margin: 2rem;
         border-radius: 20px;
+        text-decoration:none ;
     }
     .buttonmore{
         padding: 1.3rem 2rem;
         border-radius: 20px;
+        margin: 2rem;
         border: 1px solid #ebeef3;
         box-shadow: 0 4px 10px rgba(20, 20, 43, .04);
+        text-decoration:none ;
         &:hover {
             color: white;
             background-color: #030774;

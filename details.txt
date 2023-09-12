@@ -1,0 +1,19 @@
+<details>
+              <summary class="summary">
+                <i class="arrow right"></i>
+                Cours individuels de prononciation
+                <p class="price">49€/heure</p>
+              </summary>
+              <p class="detail-title">
+                Pour améliorer ta prononciation et mieux te faire comprendre
+              </p>
+              <ul>
+                <li class="detail-item">
+                  Une méthode testée et approuvée pour améliorer ta
+                  prononciation
+                </li>
+                <li class="detail-item">
+                  Des exercices pour pratiquer entre les leçons
+                </li>
+              </ul>
+            </details>

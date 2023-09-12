@@ -189,16 +189,23 @@ body button {
   font-size: 1.2rem;
   margin: 1rem;
 }
+body .content-button {
+  margin: 2rem;
+}
 body .browse {
   background-color: #f25e5e;
   padding: 1.3rem 2rem;
+  margin: 2rem;
   border-radius: 20px;
+  text-decoration: none;
 }
 body .buttonmore {
   padding: 1.3rem 2rem;
   border-radius: 20px;
+  margin: 2rem;
   border: 1px solid #ebeef3;
   box-shadow: 0 4px 10px rgba(20, 20, 43, 0.04);
+  text-decoration: none;
 }
 body .buttonmore:hover {
   color: white;
@@ -311,7 +318,7 @@ body .wrapper main .photo-container {
   body .wrapper main .content {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 10rem;
+    gap: 3rem;
   }
   body .wrapper main .content .content-container {
     align-self: center;
@@ -319,7 +326,7 @@ body .wrapper main .photo-container {
   body .wrapper main .content2 {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 15px;
+    gap: 3rem;
   }
   body .wrapper main .content2 .content-container {
     align-self: center;
