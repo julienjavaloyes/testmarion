@@ -25,9 +25,9 @@ body {
   background-color: white;
 }
 body .wrapper .language-selection {
-  margin: 0 2rem;
   width: 100%;
   padding-left: 1rem;
+  padding-right: 4rem;
   display: flex;
   gap: 15px;
   flex-direction: row;
@@ -133,6 +133,12 @@ body .wrapper main form {
 body .wrapper main form input {
   margin: 0.5rem;
 }
+body .wrapper main p {
+  margin: 2rem 0rem;
+}
+body .wrapper main .top6rem {
+  margin-top: 6rem;
+}
 body .wrapper footer {
   margin: 2rem;
   text-align: center;
@@ -146,6 +152,12 @@ body {
 body h1 {
   font-weight: 700;
   font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+body h2 {
+  text-align: center;
+  font-size: 1.5rem;
 }
 body .hero-text {
   font-size: 1.75rem;
@@ -167,6 +179,24 @@ body .price {
   font-weight: 400;
   font-size: 1rem;
   font-style: italic;
+}
+body p {
+  font-size: 1.2rem;
+}
+body li {
+  font-size: 1.2rem;
+}
+body .ul-top {
+  margin-top: 6rem;
+}
+body .ul-top li {
+  font-size: 1.3rem;
+}
+body .toptemp {
+  margin-top: 4rem;
+}
+body .toptemp2 {
+  margin-top: 6rem;
 }
 
 body .wrapper header .header-menu nav a::after {
@@ -190,12 +220,14 @@ body button {
   margin: 1rem;
 }
 body .content-button {
-  margin: 2rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 body .browse {
   background-color: #f25e5e;
   padding: 1.3rem 2rem;
-  margin: 2rem;
+  margin: 0 2rem;
   border-radius: 20px;
   text-decoration: none;
 }
@@ -337,5 +369,14 @@ body .wrapper main .photo-container {
   }
   body .wrapper main .nopics .content-container {
     align-self: center;
+  }
+  body .wrapper main .content-button {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  body .wrapper main .content-button .browse {
+    margin: 2rem;
   }
 }/*# sourceMappingURL=main.css.map */

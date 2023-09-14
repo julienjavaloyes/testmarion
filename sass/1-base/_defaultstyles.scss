@@ -1,13 +1,14 @@
 
 @use  '../0-abstracts/colors' as c;
 
+
 body {
     background-color:white;
     .wrapper {
         .language-selection {
-            margin: 0 2rem;
             width: 100%;
             padding-left: 1rem;
+            padding-right: 4rem;
             display: flex;
             gap: 15px;
             flex-direction: row;
@@ -117,12 +118,19 @@ body {
                     margin:0.5rem;
                 }
             }
+            p {
+                margin: 2rem 0rem;
+            }
+            .top6rem{
+                margin-top: 6rem;
+            }
 
         }
         footer {
             margin: 2rem;
             text-align: center;
         }
+
     }
 }
 
