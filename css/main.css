@@ -96,7 +96,6 @@ body .wrapper main .photo-container {
   grid-template-rows: repeat(10, 1fr);
 }
 body .wrapper main .photo-container .img-bg-color {
-  background-color: blue;
   border-radius: 5%;
   grid-column: 2/-1;
   grid-row: 1/10;
