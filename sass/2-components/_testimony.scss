@@ -1,0 +1,59 @@
+body {
+    .wrapper {
+        .slider {
+            position: relative;
+            overflow: hidden;
+            margin-top: 2rem;
+        }
+        .testimonial {
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            margin: auto;
+            input {
+                display: none;
+            }
+        }
+        .dots{
+            display: flex;
+            justify-content: center;
+            margin: 5px;
+            label {
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                border: solid black 3px;
+                cursor: pointer;
+                margin: 5px;
+                transition: all 0.15s ease;
+            }
+            label:hover {
+                background:black ;
+            }
+        }
+        .t1{
+            display: none;
+        }
+        .t2{
+            display: none;
+        }
+        .t3{
+            display: none;
+        }
+        .t4{
+            display: none;
+        }
+        #testimony1:checked ~ .t1 {
+            display: inline;
+        }
+        #testimony2:checked ~ .t2 {
+            display: inline;
+        }
+        #testimony3:checked ~ .t3 {
+            display: inline;
+        }
+        #testimony4:checked ~ .t4 {
+            display: inline;
+        }
+    }
+}

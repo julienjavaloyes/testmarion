@@ -101,9 +101,7 @@ body {
                     width: 100%;
                 }
             }
-            .content{
-                padding-bottom: 5rem;
-            }
+
 
             summary {
                 display: flex;
@@ -145,11 +143,10 @@ body {
             }
 
         }
-        footer {
-            margin: 2rem;
-            text-align: center;
-        }
-
+    }
+    footer {
+        margin: 2rem;
+        text-align: center;
     }
 }
 
