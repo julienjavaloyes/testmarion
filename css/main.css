@@ -116,6 +116,9 @@ body .wrapper main .photo-container .image {
   align-self: center;
   width: 100%;
 }
+body .wrapper main .div-center {
+  margin-left: 5rem;
+}
 body .wrapper main summary {
   display: flex;
   align-items: center;
