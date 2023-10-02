@@ -45,6 +45,12 @@ body .wrapper header .header-menu .logo {
 body .wrapper header .header-menu .logo img {
   width: 12rem;
 }
+body .wrapper header .header-menu .linkedin {
+  margin: auto;
+}
+body .wrapper header .header-menu .linkedin img {
+  width: 3rem;
+}
 body .wrapper header .header-menu .hamburger-menu {
   margin-top: 24px;
   display: flex;
@@ -365,6 +371,10 @@ body .wrapper header .header-menu nav {
 body .wrapper header .header-menu .hamburger-menu:has(input:checked) + nav {
   display: contents;
 }
+body .wrapper header .linkedin {
+  margin: 0;
+  padding: 20px 0 0 0;
+}
 body .wrapper main .content {
   display: flex;
   flex-direction: column-reverse;
@@ -397,6 +407,10 @@ body .wrapper main .photo-container {
   body .wrapper header .logo {
     margin: 0;
     padding: 0 40px 0 0;
+  }
+  body .wrapper header .linkedin {
+    margin: 0;
+    padding: 0 0 0 40px;
   }
   body .wrapper header .header-menu {
     display: flex;
