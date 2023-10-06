@@ -57,9 +57,14 @@
       <main>
         <div class="content2 nopics">
           <div class="content-container">
-            <h2>Formulaire de contact</h2>
+            <h2>Contact Me!</h2>
 
-            <form action="">
+            <form
+              action="https://formsubmit.co/marion@frenchwithmarionlim.com"
+              method="POST"
+            >
+              <input type="text" name="_honey" style="display: none" />
+              <input type="hidden" name="_captcha" value="false" />
               <fieldset>
                 <legend>Last name</legend>
                 <input type="text" name="last_name" placeholder="Last name" />
@@ -70,7 +75,7 @@
               </fieldset>
               <fieldset>
                 <legend>Email address</legend>
-                <input type="email" name="email" placeholder="Email" />
+                <input type="email" name="email" placeholder="Email" required />
               </fieldset>
 
               <fieldset>
@@ -93,7 +98,7 @@
 
               <fieldset>
                 <legend>French level</legend>
-                <select name="test" id="">
+                <select name="level" id="">
                   <option value="">Beginner</option>
                   <option value="">A1</option>
                   <option value="">A2</option>
@@ -118,8 +123,8 @@
                     information about learning French
                   </div>
 
-                  <input type="checkbox" name="test" class="checkb" />
-                  <label for="test">Receive newsletter</label>
+                  <input type="checkbox" name="ennews" class="checkb" />
+                  <label for="ennews">Receive newsletter</label>
                 </div>
               </fieldset>
 
