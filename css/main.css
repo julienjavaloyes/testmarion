@@ -289,6 +289,14 @@ body select {
   border: none;
   padding-left: 0.5rem;
 }
+body .button-testgratuit {
+  background-color: green;
+  color: white;
+  padding: 0.7rem 1rem 0.7rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-left: 5px;
+}
 
 body .wrapper .slider {
   position: relative;
