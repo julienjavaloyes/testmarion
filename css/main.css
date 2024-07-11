@@ -396,6 +396,9 @@ body .wrapper main .photo-container {
   margin: 2rem auto 0 auto;
   max-width: 80%;
 }
+body .wrapper main .toptemp4 {
+  text-align: center;
+}
 
 @media (min-width: 1000px) {
   body {
