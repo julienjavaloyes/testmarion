@@ -13,8 +13,6 @@ body {
             input {
                 display: none;
             }
-
-            
         }
         .dots{
             display: flex;
@@ -48,6 +46,9 @@ body {
         .t5{
             display: none;
         }
+        .t6{
+            display: none;
+        }
         #testimony1:checked ~ .t1 {
             display: inline;
         }
@@ -61,6 +62,9 @@ body {
             display: inline;
         }
         #testimony5:checked ~ .t5 {
+            display: inline;
+        }
+        #testimony6:checked ~ .t6 {
             display: inline;
         }
     }
