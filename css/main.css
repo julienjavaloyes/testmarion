@@ -341,6 +341,9 @@ body .wrapper .t3 {
 body .wrapper .t4 {
   display: none;
 }
+body .wrapper .t5 {
+  display: none;
+}
 body .wrapper #testimony1:checked ~ .t1 {
   display: inline;
 }
@@ -351,6 +354,9 @@ body .wrapper #testimony3:checked ~ .t3 {
   display: inline;
 }
 body .wrapper #testimony4:checked ~ .t4 {
+  display: inline;
+}
+body .wrapper #testimony5:checked ~ .t5 {
   display: inline;
 }
 
