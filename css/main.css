@@ -411,6 +411,10 @@ body .wrapper main .photo-container {
 body .wrapper main .toptemp4 {
   text-align: center;
 }
+body .wrapper main .toptemp5 {
+  text-align: center;
+  margin-bottom: 5rem;
+}
 
 @media (min-width: 1000px) {
   body {
