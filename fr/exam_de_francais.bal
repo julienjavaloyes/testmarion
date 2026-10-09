@@ -49,7 +49,7 @@
               </li>
               <li>
                 <a href="exam_de_francais.html"
-                  >Préparation aux examens<br />
+                  >Préparation aux <br />
                   DELF/DALF/TCF/TEF</a
                 >
               </li>
